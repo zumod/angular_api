@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Angular JS Includes</title>
+    <title>Angular JS</title>
     <style>
         table, th, td {
             border: 1px solid grey;
@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <h2>AngularJS Sample Application</h2>
+    <h2>AngularJS API Sample</h2>
     <div ng-app="" ng-controller="categoryController">
         <table>
             <tr>
@@ -36,13 +36,12 @@
     </div>
     <script>
         function categoryController($scope, $http) {
-            var url = "http://127.0.0.1:5500/sample.json";
+            var url = 'sample.json';
             $http.get(url).success(function (response) {
                 $scope.categories = response;
             });
         }
     </script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/
-                        1.2.15/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </body>
 </html> 
